@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <header id="header" >
         <div class="header">
         <div class="logo">
@@ -95,19 +96,22 @@
             <<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/-fQGPZTECYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <form id="form" action="https://www.freecodecamp.org/email-submit">
+        <form id="form">
             <div class="email-form">
             
                 <label for="email">Subscribe to our newsletter for updates and offers!</label>
                 <input type="email" id="email" name="email" placeholder="Enter Your Email"
                 required class="email-input">
 
-                <input type="submit" id="submit" class="submit-button">  
+                <input type="button" id="submit" value="submit" class="submit-button">  
                 
             </div>
+            
 
         </form>
+        <div class="success-notice hidden"></div>
+        
     </main>
-
+<script src="script.js"></script>
 </body>
 </html>

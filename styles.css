@@ -15,7 +15,19 @@
     width: 100vw;
     padding: 0 1em;
     width: 100vw;
-    background-image: linear-gradient(to bottom, hsl(229, 0%, 60%, 1), #fff);
+    background-image: linear-gradient(
+        0deg,
+        hsl(0deg 0% 100%) 0%,
+        hsl(39deg 100% 92%) 11%,
+        hsl(38deg 100% 84%) 22%,
+        hsl(38deg 100% 77%) 33%,
+        hsl(38deg 100% 69%) 44%,
+        hsl(38deg 100% 61%) 56%,
+        hsl(38deg 100% 53%) 67%,
+        hsl(38deg 100% 45%) 78%,
+        hsl(38deg 100% 38%) 89%,
+        hsl(38deg 100% 30%) 100%
+        );
     z-index: 999;
 }
 .logo{
@@ -107,7 +119,7 @@ main h2{
     text-align: center;
 }
 .card-info h3{
-    background-color:hsla(229, 0%, 60%, 0.44);
+    background-color:#DB8B00;
     background-repeat:;
     padding: 1em 1em;
     border-radius: 10px 10px 0 0;
@@ -165,6 +177,16 @@ main h2{
     border: 2px solid black;
     font-weight: 700;
 }
+.hidden{
+    display: none;
+}
+.success-notice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
 @media(max-width:800px){
     .header{
         flex-direction: column;
@@ -175,11 +197,22 @@ main h2{
     .logo p{
         font-size: 1.5em;
     }
+
+    .logo h1{
+        padding: 1em 0.5em;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    #header-img{
+        height: 100px;
+    }
     .nav-links li{
         padding: 1em;
+        font-size: .8em;
     }
     main{
-        margin-top: 27em;
+        margin-top: 15em;
+        font-size: 0.8em;
     }
     .content-block{
         padding-left: 10%;
@@ -188,10 +221,12 @@ main h2{
         flex-direction: column;
         align-items: center;
     }
+
     .card-content{
         width: 80%;
-        min-width: 400px;
+        min-width: 300px;
         margin: 1em;
     }
+    
 }
 
